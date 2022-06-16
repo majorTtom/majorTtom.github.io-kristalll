@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Philosopher','PT Sans', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  /*  max-width: 100%;*/
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  transition: .5s ease;
+}
+a:hover {
+  opacity: .3;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.popup {
+  z-index: 100;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: #000000d6;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  /**/
+  /**/
+  /* .popup__wrap */
+  /* .popup__form */
+  /* .popup__form-item-wrap */
+  /* .popup__form-item */
+  /* .popup__form-h */
+  /* .popup__input */
+  /* .popup__form-btn */
+  /* .popup__send */
+}
+
+.popup__active {
+  display: grid;
+}
+
+.popup__close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__close span {
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  content: '';
+}
+
+.popup__close span:before {
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  content: '';
+  transform: rotate(90deg);
+}
+
+.popup__wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 80vh;
+  background-color: #fff;
+}
+
+.popup__form {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+.popup__form-item-wrap {
+  margin-top: 80px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.popup__form-item {
+  width: 320px;
+}
+
+.popup__form-h {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.popup__input {
+  outline: none;
+  margin-top: 120px;
+  border: none;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+
+.popup__form-btn {
+  grid-column: 1/3;
+  margin-top: 130px;
+}
+
+.popup__send {
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  background-color: #fff;
+  width: 210px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 15px;
+  text-transform: uppercase;
+  transition: .5s ease;
+}
+
+.popup__send:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  /* .header__wrap */
+  /* .header__logo */
+  /* .header__nav */
+  /* .header__link */
+  /* .header__phone */
+}
+.header__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  background-image: url(../img/logo5.png);
+  width: 60px;
+  height: 52px;
+  display: block;
+  background-repeat: no-repeat;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 0 auto;
+}
+.header__link {
+  text-transform: lowercase;
+  /*font-weight: bold;*/
+  color: #000;
+  font-size: 18px;
+  font-family: 'Philosopher', serif;
+  font-weight: 400;
+}
+.header__phone {
+  color: #000;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+  font-family: 'Philosopher','PT Sans', serif;
+}
+
+.footer {
+  /* .footer__up */
+  /* .footer__up-first-wrap */
+  /* .footer__up-first */
+  /* .footer__up-first-link */
+  /* .footer__up-second-wrap */
+  /* .footer__up-second */
+  /* .footer__up-second-link */
+  /* .footer__up-second-i */
+  /* .footer__up-second-i */
+  /* .footer__up-second-i */
+  /* .footer__down */
+  /* .footer__down-wrap */
+  /* .footer__down-cop */
+  /* .footer__down-logo */
+  /* .footer__down-jo */
+  /* .footer__down-jo-p */
+  /* .footer__down-jo-l */
+}
+
+.footer__up {
+  background-color: #000;
+  color: #fff;
+  height: 300px;
+}
+
+.footer__up-first-wrap {
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__up-first {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.footer__up-first-link {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.footer__up-second-wrap {
+  height: 190px;
+  display: grid;
+  width: 100%;
+  align-items: center;
+}
+
+.footer__up-second {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__up-second-link {
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.footer__up-second-i {
+  margin-right: 15px;
+}
+
+.footer__up-second-inst {
+  display: block;
+  width: 39px;
+  height: 42px;
+  background-image: url(../img/inst.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer__up-second-wa {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/wa.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer__down {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__down-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__down-cop {
+  font-size: 16px;
+  font-family: 'Philosopher', sans-serif;
+  text-transform: uppercase;
+}
+
+.footer__down-logo {
+  width: 75px;
+  height: 67px;
+  display: block;
+  background-image: url(../img/fttr-lg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer__down-jo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__down-jo-p {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 15px;
+}
+
+.footer__down-jo-l {
+  margin-left: 15px;
+  background-image: url(../img/lg.svg);
+  display: block;
+  background-color: contain;
+  width: 44px;
+  height: 20px;
+}

@@ -1,0 +1,74 @@
+.gallery {
+  /* .gallery__blur */
+  /* .gallery__wrap */
+  /* .gallery__portfolio-title */
+  /* .gallery__content-photo-wrap */
+  /* .gallery__content-photo */
+  /* .gallery__portfolio-photo */
+  /* .gallery__photo-item */
+}
+.gallery__portfolio-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.gallery__portfolio-photo {
+  grid-template-columns: 1fr 1fr;
+}
+.gallery__photo-item {
+  width: 550px;
+  height: 380px;
+  background-repeat: no-repeat;
+}
+.gallery__photo-item:first-child {
+  background-image: url(../img/gallery/photo/r1.webp);
+}
+.gallery__photo-item:nth-child(2) {
+  background-image: url(../img/gallery/photo/r2.webp);
+}
+.gallery__photo-item:nth-child(3) {
+  background-image: url(../img/gallery/photo/r3.webp);
+}
+.gallery__photo-item:nth-child(4) {
+  background-image: url(../img/gallery/photo/r4.webp);
+}
+.gallery__photo-item:nth-child(5) {
+  background-image: url(../img/gallery/photo/r5.webp);
+}
+.gallery__photo-item:nth-child(6) {
+  background-image: url(../img/gallery/photo/r6.webp);
+}
+.gallery__photo-item:nth-child(7) {
+  background-image: url(../img/gallery/photo/r7.webp);
+}
+.gallery__photo-item:nth-child(8) {
+  background-image: url(../img/gallery/photo/r8.webp);
+}
+.gallery__photo-item:nth-child(9) {
+  background-image: url(../img/gallery/photo/r9.webp);
+}
+.gallery__photo-item:nth-child(10) {
+  background-image: url(../img/gallery/photo/r10.webp);
+}
+.gallery__photo-item:nth-child(11) {
+  background-image: url(../img/gallery/photo/r11.webp);
+}
+.gallery__photo-item:nth-child(12) {
+  background-image: url(../img/gallery/photo/r12.webp);
+}
+.gallery__photo-item:nth-child(13) {
+  background-image: url(../img/gallery/photo/r13.webp);
+}
+.gallery__photo-item:nth-child(14) {
+  background-image: url(../img/gallery/photo/r14.webp);
+}
+.gallery__photo-item:nth-child(15) {
+  background-image: url(../img/gallery/photo/r15.webp);
+}
+.gallery__portfolio-item {
+  background-size: 100%;
+}
+.gallery__portfolio-item:hover {
+  background-size: 110%;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}

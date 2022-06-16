@@ -1,0 +1,165 @@
+.price {
+  height: 700px;
+  /* .price__header */
+  /* .price__h */
+  /* .price__price-wrap */
+  /* .price__price-buttons */
+  /* .price__button */
+  /* .price__button-active */
+  /* .price__list */
+  /* .price__list-item */
+  /* .price__span2 */
+  /* .price__name */
+  /* .price__num */
+  /* .price__img */
+  /* .price__img-item */
+  /**/
+  /**/
+}
+.price__header {
+  background-color: #47ABC3;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price__h {
+  font-weight: 100;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'PT Sans', serif;
+}
+.price__price-wrap {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+}
+.price__button {
+  transition: .5s ease;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  border-radius: 15px;
+  color: #47ABC3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: lowercase;
+  font-size: 18px;
+  border: 2px solid #47ABC3;
+  margin-bottom: 10px;
+}
+.price__button:hover {
+  color: #fff;
+  background-color: #47ABC3;
+  opacity: 1 !important;
+}
+.price__button-active {
+  color: #fff;
+  background-color: #47ABC3;
+}
+.price__list {
+  justify-self: center;
+  width: 360px;
+}
+.price__list-item {
+  transition: .5s ease;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 74% 26%;
+}
+.price__list-item span {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+.price__list-item:hover {
+  padding-left: 5px;
+}
+.price__span2 {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+.price__num {
+  justify-self: end;
+  padding-right: 16px;
+}
+.price__img {
+  justify-self: end;
+  width: 360px;
+  height: 250px;
+  border-radius: 50px;
+}
+.price__img-item {
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.price__img-item-1 {
+  background-image: url(../img/gallery/photo/im1.webp);
+}
+.price__img-item-2 {
+  background-image: url(../img/gallery/photo/im2.webp);
+}
+.price__img-item-3 {
+  background-image: url(../img/gallery/photo/im3.webp);
+}
+.price__img-item-4 {
+  background-image: url(../img/gallery/photo/im4.webp);
+}
+.price__img-1 {
+  background-image: url(../img/gallery/photo/kvrln2.webp) !important;
+}
+.price__img-2 {
+  background-image: url(../img/gallery/photo/sin.webp) !important;
+}
+.price__img-3 {
+  background-image: url(../img/gallery/photo/shrst.webp) !important;
+}
+.price__img-4 {
+  background-image: url(../img/gallery/photo/vors.webp) !important;
+}
+.price__img-5 {
+  background-image: url(../img/gallery/photo/shelk.webp) !important;
+}
+.price__img-6 {
+  background-image: url(../img/gallery/photo/divan.webp) !important;
+}
+.price__img-7 {
+  background-image: url(../img/gallery/photo/stul.webp) !important;
+}
+.price__img-8 {
+  background-image: url(../img/gallery/photo/odno.webp) !important;
+}
+.price__img-9 {
+  background-image: url(../img/gallery/photo/polu.webp) !important;
+}
+.price__img-10 {
+  background-image: url(../img/gallery/photo/dvu.webp) !important;
+}
+.price__img-11 {
+  background-image: url(../img/gallery/photo/pled.webp) !important;
+}
+.price__img-12 {
+  background-image: url(../img/gallery/photo/kol.webp) !important;
+}
+.price__img-13 {
+  background-image: url(../img/gallery/photo/avto.webp) !important;
+}
+.price__img-14 {
+  background-image: url(../img/gallery/photo/toy.webp) !important;
+}

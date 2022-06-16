@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Кристалл</title>
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="icon" href="img/fav.svg" type="image/x-icon">
+	<style>
+		::-webkit-scrollbar-button {
+		background-image:url('');
+		background-repeat:no-repeat;
+		width:3px;
+		height:0px
+		}
+
+		::-webkit-scrollbar-track {
+		background-color:rgba(225, 225, 225, 225);
+		}
+
+		::-webkit-scrollbar-thumb {
+			-webkit-border-radius: 0px;
+			border-radius: 50px;
+			background-color: rgba(0,0,0,0.5);		
+		}
+
+		::-webkit-resizer{
+		background-image:url('');
+		background-repeat:no-repeat;
+		width:3px;
+		height:0px
+		}
+
+		::-webkit-scrollbar{
+			width: 8px;
+			height: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__wrap">
+				<a href="index.html" class="header__logo"></a>
+				<div class="header__nav">
+					<a href="index.html" class="header__link">
+						<li>Главная</li>
+					</a>
+					<a href="cover.html" class="header__link">
+						<li>Цены и услуги</li>
+					</a>
+					<a href="portfolio.html" class="header__link">
+						<li>Наши работы</li>
+					</a>
+					<a href="gallery-photo.html" class="header__link">
+						<li>Галерея</li>
+					</a>
+					<a href="contacts.html" class="header__link">
+						<li>Контакты</li>
+					</a>
+				</div>
+				<a href="tel:+79627720101" class="header__phone">+7 962 772 01 01</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="mobile" id="mobile">
+		<div class="container">
+			<div class="mobile__wrap">
+				<a href="index.html" class="mobile__logo"></a>
+				<div class="mobile__btn">
+					<span class="mobile__span"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="popup" id="popup">
+		<div class="popup__wrap">
+			<form action="mail.php" method="POST" class="popup__form">
+				<div class="popup__close"><span></span></div>
+
+				<input type="hidden" name="project_name" value="Kristall">
+				<input type="hidden" name="admin_email" value="jollyollly@gmail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+
+				<div class="popup__form-item-wrap">
+					<div class="popup__form-item">
+						<h2 class="popup__form-h">Имя</h2>
+						<input class="popup__input" type="text" name="Имя:" placeholder="введите имя" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name ';}" required>
+					</div>
+
+					<div class="popup__form-item">
+						<h2 class="popup__form-h">Телефон</h2>
+						<input class="mask-phone form-control popup__input" type="text" name="Телефон:" placeholder="введите телефон" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone ';}" required>
+					</div>
+
+					<div class="popup__form-btn">
+						<button class="popup__send" type="submit" value="SEND">Отправить</button>
+					</div>	
+				</div>
+
+			</form>
+		</div>
+	</section>
+
+	<section class="fixed fixed__o" id="fixed">
+		<div class="fixed__wrap">
+			<a href="index.html" class="fixed__logo"></a>
+			<div class="fixed__nav">
+				<a href="index.html" class="fixed__link">
+					<li>Главная</li>
+				</a>
+				<a href="cover.html" class="fixed__link">
+					<li>Цены и услуги</li>
+				</a>
+				<a href="portfolio.html" class="fixed__link">
+					<li>Наши работы</li>
+				</a>
+				<a href="gallery-photo.html" class="fixed__link">
+					<li>Галерея</li>
+				</a>
+				<a href="contacts.html" class="fixed__link">
+					<li>Контакты</li>
+				</a>
+			</div>
+			<div class="fixed__btn" ><span>заказать звонок</span></div>
+			<a href="tel:+79627720101" class="fixed__phone">+7 962 772 01 01</a>
+		</div>
+	</section>
+
+
+	<section class="main" id="main">
+		<div class="main__wrap">
+			<div class="main__bcg"></div>
+			<div class="container">
+				<div class="main__content">
+					<div class="main__first">
+						<h1 class="main__title">стирка ковров, химчистка мебели, матрасов</h1>
+						<a href="tel:+79627720101" class="main__btn"><span>Позвонить</span></a>
+						<div class="main__p">
+							Нальчик, Мовсисяна 3</br>Работаем: Пн-Сб 9:00-19:00
+						</div>
+					</div>
+					<div class="main__second">
+						<div class="main__slider-wrap">
+							<div class="main__slider">
+								<div class="main__slider-item">
+									<h4 class="main__slider-name">Наташа</h4>
+									<p class="main__slider-text">
+										Добрый день! Хочу поблагодарить ваших ребят, которые почистили мой любимый диван и подарили ему практически вторую жизнь, а мне хорошее настроение! Огромное спасибо за вашу добросовестную работу, желаю вам процветания и много благодарных клиентов!
+									</p>
+								</div>
+							</div>
+							<div class="main__slider-down">
+								<div class="main__slider-btns">
+									<div class="main__slider-prev"></div>
+									<div class="main__slider-next"></div>
+								</div>
+								<div class="main__slider-numbers">
+									<p class="main__slider-number"><span class="main__num">1</span>/6</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main__mobile">
+			<h1 class="main__mob-title">стирка ковров, химчистка мебели, матрасов</h1>
+			<a href="tel:+79627720101" class="main__mob-btn"><span>Позвонить</span></a>
+			<p class="main__mob-p">Нальчик, Мовсисяна 3</br>Работаем: Пн-Сб 9:00-19:00</p>
+		</div>
+	</section>
+
+	<section class="benefit" id="benefit">
+		<div class="container">
+			<h1 class="benefit__title">Почему именно мы?</h1>
+			<div class="benefit__wrap">
+				<div class="benefit__item">
+					<div class="benefit__up">
+						<div class="benefit__icon icon-1"></div>
+						<div class="benefit__number-wrap">
+							<h6 class="benefit__num">1</h6>
+						</div>
+					</div>
+					<div class="benefit__down">
+						<p class="benefit__text">работаем без выходных и праздников</p>
+					</div>
+				</div>
+
+				<div class="benefit__item">
+					<div class="benefit__up">
+						<div class="benefit__icon icon-2"></div>
+						<div class="benefit__number-wrap">
+							<h6 class="benefit__num">2</h6>
+						</div>
+					</div>
+					<div class="benefit__down">
+						<p class="benefit__text">используем профессиональное оборудование</p>
+					</div>
+				</div>
+
+				<div class="benefit__item">
+					<div class="benefit__up">
+						<div class="benefit__icon icon-3"></div>
+						<div class="benefit__number-wrap">
+							<h6 class="benefit__num">3</h6>
+						</div>
+					</div>
+					<div class="benefit__down">
+						<p class="benefit__text">гипоаллегргенная химия</p>
+					</div>
+				</div>
+
+				<div class="benefit__item">
+					<div class="benefit__up">
+						<div class="benefit__icon icon-4"></div>
+						<div class="benefit__number-wrap">
+							<h6 class="benefit__num">4</h6>
+						</div>
+					</div>
+					<div class="benefit__down">
+						<p class="benefit__text">бесплатная доставка</p>
+					</div>
+				</div>
+
+				<div class="benefit__item">
+					<div class="benefit__up">
+						<div class="benefit__icon icon-5"></div>
+						<div class="benefit__number-wrap">
+							<h6 class="benefit__num">5</h6>
+						</div>
+					</div>
+					<div class="benefit__down">
+						<p class="benefit__text">сертифицированные специалисты</p>
+					</div>
+				</div>
+
+				<div class="benefit__item">
+					<div class="benefit__up">
+						<div class="benefit__icon icon-6"></div>
+						<div class="benefit__number-wrap">
+							<h6 class="benefit__num">6</h6>
+						</div>
+					</div>
+					<div class="benefit__down">
+						<p class="benefit__text">10% выручки отдаем на благотворительсность</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="process" id="process">
+		<div class="container">
+			<div class="process__wrap">
+				<div class="process__up">
+					<h1 class="process__title title">как мы работаем?</h1>
+					<div class="process__icon">
+						<div class="process__i-text">
+							<p class="process__i-p">В нашей галерее есть серия видеороликов, из которых вы можете узнать все, о том как мы выполняем нашу работу </p>
+						</div>
+					</div>
+				</div>
+				<div class="process__down">
+					<div class="process__down-wrap">
+						<div class="process__down-item">
+							<div class="process__down-item-up-wrap">
+								<div class="process__down-item-up">
+									<h6 class="process__down-item-h">заявка</h6>
+									<h5 class="process__down-item-number">1</h5>
+								</div>
+							</div>
+							<div class="process__down-item-down">
+								<p class="process__down-item-p">Вы нам звоните, или оставляете заявку по форме обратной связи</p>
+							</div>
+						</div>
+
+						<div class="process__down-item">
+							<div class="process__down-item-up-wrap">
+								<div class="process__down-item-up">
+									<h6 class="process__down-item-h">детали</h6>
+									<h5 class="process__down-item-number">2</h5>
+								</div>
+							</div>
+							<div class="process__down-item-down">
+								<p class="process__down-item-p">По телефону обговариваем стоимость услуги, а так же время и место, куда приедет наш курьер</p>
+							</div>
+						</div>
+
+						<div class="process__down-item">
+							<div class="process__down-item-up-wrap">
+								<div class="process__down-item-up">
+									<h6 class="process__down-item-h">вывоз</h6>
+									<h5 class="process__down-item-number">3</h5>
+								</div>
+							</div>
+							<div class="process__down-item-down">
+								<p class="process__down-item-p">Курьер приезжает к вам в назначенное время и забирает ковёр к нам в цех</p>
+							</div>
+						</div>
+
+						<div class="process__down-item">
+							<div class="process__down-item-up-wrap">
+								<div class="process__down-item-up">
+									<h6 class="process__down-item-h">осмотр</h6>
+									<h5 class="process__down-item-number">4</h5>
+								</div>
+							</div>
+							<div class="process__down-item-down">
+								<p class="process__down-item-p">Мы осматриваем ваш ковёр и подбираем наилучший метод чистки</p>
+							</div>
+						</div>
+
+						<div class="process__down-item">
+							<div class="process__down-item-up-wrap">
+								<div class="process__down-item-up">
+									<h6 class="process__down-item-h">чистка</h6>
+									<h5 class="process__down-item-number">5</h5>
+								</div>
+							</div>
+							<div class="process__down-item-down">
+								<p class="process__down-item-p">Чистку ковра производим на современных станках с применением ЭКО-средств</p>
+							</div>
+						</div>
+
+						<div class="process__down-item">
+							<div class="process__down-item-up-wrap">
+								<div class="process__down-item-up">
+									<h6 class="process__down-item-h">сушка</h6>
+									<h5 class="process__down-item-number">6</h5>
+								</div>
+							</div>
+							<div class="process__down-item-down">
+								<p class="process__down-item-p">Ковры помещаются в сушильную камеру, где они высыхают в течении 12 часов не зависимо от погодных условий</p>
+							</div>
+						</div>
+
+						<div class="process__down-item">
+							<div class="process__down-item-up-wrap">
+								<div class="process__down-item-up">
+									<h6 class="process__down-item-h">Упаковка</h6>
+									<h5 class="process__down-item-number">7</h5>
+								</div>
+							</div>
+							<div class="process__down-item-down">
+								<p class="process__down-item-p">Надежно упаковываем ваш ковер</p>
+							</div>
+						</div>
+
+						<div class="process__down-item">
+							<div class="process__down-item-up-wrap">
+								<div class="process__down-item-up">
+									<h6 class="process__down-item-h">доставка</h6>
+									<h5 class="process__down-item-number">8</h5>
+								</div>
+							</div>
+							<div class="process__down-item-down">
+								<p class="process__down-item-p">Идеально чистые и сухие ковры, доставляем вам домой</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="gallery-video.html" class="process__btn">
+					Подробнее
+					<span class="process__arrow"></span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="results" id="results">
+		<div class="results__slider-nav" id="result">
+			<input type="text" value="0" class="counter__value" style="display: none;">
+			<div  id="left" class="results__slider-nav-left counter__btn" data-direction="minus"></div>
+			<div  id="right" class="results__slider-nav-right counter__btn" data-direction="plus"></div>
+		</div>
+		<div class="results__wrap">
+			<h1 class="results__title title">Наши работы</h1>
+			<div class="results__slider">
+				<div class="results__slider-wrap" id="wrap">
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+					<div class="results__slider-item"></div>
+				</div>
+			</div>
+			<a href="portfolio.html" class="results__btn">
+				Примеры работ
+				<span class="results__arrow"></span>
+			</a>
+		</div>
+	</section>
+
+	<section class="feed" id="feed">
+		<div class="container">
+			<div class="feed__wrap">
+				<h1 class="feed__title title">Отзывы</h1>
+				<div class="feed__slider-wrap">
+					<div class="feed__slider">
+						<div class="feed__slider-item">
+							<div class="feed__slider-item-wrap">
+								<div class="feed__slider-item-up">
+									<div class="feed__slider-item-up-img"></div>
+									<div class="feed__slider-item-up-text">
+										<h1 class="feed__slider-item-up-h">@vanderlakuin</h1>
+										<h5 class="feed__slider-item-up-date">19.07.2021</h5>
+									</div>
+								</div>
+								<div class="feed__slider-item-down">
+									<p class="feed__slider-item-p">Добрый день! Хочу поблагодарить ваших ребят, которые почистили мой любимый диван и подарили ему вторую жизнь, а мне хорошее настроение! Огромное спасибо за вашу работу, желаю вам процветания и много благодарных клиентов!</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed__slider-item">
+							<div class="feed__slider-item-wrap">
+								<div class="feed__slider-item-up">
+									<div class="feed__slider-item-up-img"></div>
+									<div class="feed__slider-item-up-text">
+										<h1 class="feed__slider-item-up-h">@madinaa</h1>
+										<h5 class="feed__slider-item-up-date">19.07.2021</h5>
+									</div>
+								</div>
+								<div class="feed__slider-item-down">
+									<p class="feed__slider-item-p">Здравствуйте. Сегодня привезли ковры. Спасибо за чистоту. Мне очень понравилось. Впредь буду обращаться только к вам. Успехов вам в вашей деятельности!</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed__slider-item">
+							<div class="feed__slider-item-wrap">
+								<div class="feed__slider-item-up">
+									<div class="feed__slider-item-up-img"></div>
+									<div class="feed__slider-item-up-text">
+										<h1 class="feed__slider-item-up-h">@marya_shka7</h1>
+										<h5 class="feed__slider-item-up-date">19.07.2021</h5>
+									</div>
+								</div>
+								<div class="feed__slider-item-down">
+									<p class="feed__slider-item-p">Недавно стирали нам 3 ковра, работой вашей очень довольны, приехали забрали, привезли, подняли на 5 этаж. Ковры чистые, пахнут свежестью. Спасибо большое за работу, очень приятно было с вами иметь дело. Успехов вам и процветаний.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed__slider-item">
+							<div class="feed__slider-item-wrap">
+								<div class="feed__slider-item-up">
+									<div class="feed__slider-item-up-img"></div>
+									<div class="feed__slider-item-up-text">
+										<h1 class="feed__slider-item-up-h">@ritashidova</h1>
+										<h5 class="feed__slider-item-up-date">19.07.2021</h5>
+									</div>
+								</div>
+								<div class="feed__slider-item-down">
+									<p class="feed__slider-item-p">Несколько ковров стирала в Кристалле. Вернули товар как новенькие! Качество обслуживания супер! Всем советую именно эту химчистку. Руководителю и его команде успехов и удачи во всех начинаниях. Молодцы ребята!</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed__slider-item">
+							<div class="feed__slider-item-wrap">
+								<div class="feed__slider-item-up">
+									<div class="feed__slider-item-up-img"></div>
+									<div class="feed__slider-item-up-text">
+										<h1 class="feed__slider-item-up-h">@elvvira_</h1>
+										<h5 class="feed__slider-item-up-date">19.07.2021</h5>
+									</div>
+								</div>
+								<div class="feed__slider-item-down">
+									<p class="feed__slider-item-p">Добрый день! Мне хотелось выразить вам Оооооогромную благодарность за вашу работу. Спасибо большое, ковер просто сияет. Вы большие молодцы и супер профессионалы.. Отныне только к вам))</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed__slider-item">
+							<div class="feed__slider-item-wrap">
+								<div class="feed__slider-item-up">
+									<div class="feed__slider-item-up-img"></div>
+									<div class="feed__slider-item-up-text">
+										<h1 class="feed__slider-item-up-h">@leilla_d</h1>
+										<h5 class="feed__slider-item-up-date">19.07.2021</h5>
+									</div>
+								</div>
+								<div class="feed__slider-item-down">
+									<p class="feed__slider-item-p">Здравствуйте. После сегодняшней чистки диван почти просох и виден результат: он как новый! Спасибо огромное ребятам за проделанную работу! А муж меня уверял что былой вид дивану не вернуть.Ваша работа доказала обратное) Всем буду советовать вашу химчистку.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed__slider-item">
+							<div class="feed__slider-item-wrap">
+								<div class="feed__slider-item-up">
+									<div class="feed__slider-item-up-img"></div>
+									<div class="feed__slider-item-up-text">
+										<h1 class="feed__slider-item-up-h">@yasm__in</h1>
+										<h5 class="feed__slider-item-up-date">19.07.2021</h5>
+									</div>
+								</div>
+								<div class="feed__slider-item-down">
+									<p class="feed__slider-item-p">Добрый вечер! Хотела сказать огромное вам спасибо за все, вы большие профессионалы! Ковер выглядит как новый, при этом ворс не стал жестким. А еще я боялась что будет запах химии от моющего средства, но нет! Пахнет только свежестью. Сервис очень хороший. Приехали, забрали, привезли ровно в назначенный срок. Еще раз спасибо!</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed__slider-item">
+							<div class="feed__slider-item-wrap">
+								<div class="feed__slider-item-up">
+									<div class="feed__slider-item-up-img"></div>
+									<div class="feed__slider-item-up-text">
+										<h1 class="feed__slider-item-up-h">@karinnaa</h1>
+										<h5 class="feed__slider-item-up-date">19.07.2021</h5>
+									</div>
+								</div>
+								<div class="feed__slider-item-down">
+									<p class="feed__slider-item-p">Добрый вечер! Я не смогла вас лично поблагодарить, так как меня дома не было. На счет качества стирки ковра, я как всегда в восторге) А как преобразили, это вообще.. Я и не поверила что это наш. Спасибо вам что дали нашему ковру новую жизнь</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ques" id="ques">
+		<div class="container">
+			<div class="ques__wrap">
+				<h1 class="ques__title title">Часто задаваемые вопросы</h1>
+				<div class="ques__list-wrap">
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Сколько стоит выезд? </h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								Мы выезжаем по всей территории КБР. Выезд по Нальчику бесплатный. За пределы Нальчика рассчитывается 15р. за 1км
+							</p>
+						</div>
+					</div>
+
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Чем чистка на фабрике лучше выезда на дом?</h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								Вывоз вашего ковра на фабрику позволяет провести полный комплекс очистки, недоступный в домашних условиях. Машинное очищение от пыли, чистка, озонирование и работа над вашим ковром сразу нескольких специалистов делают разницу на порядки
+							</p>
+						</div>
+					</div>
+
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Сколько времени уйдёт на весь процесс?</h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								Доставка осуществляется на следующий день после прохождения всех этапов химчистки. Сам процесс чистки занимает 5-7 дней. Оператор заранее согласует с вами удобное время доставки, а водитель предупредит о своем приезде, чтобы вы точно были дома.
+							</p>
+						</div>
+					</div>
+
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Какие средства вы используете?</h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								Мы используем высококачественную химию "Mix" и "Wiebber". Все средства гипоаллергенны и биоразлогаемы. Можно не переживать за детей или домашних питомцев. 
+							</p>
+						</div>
+					</div>
+					
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Ковер доставляют сухим?</h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								После стирки все ковры мы сушим в специально оборудованной сушильной камере, благодаря чему ковры высыхают на 100%. 
+							</p>
+						</div>
+					</div>
+					
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">В какой момент происходит оплата? </h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								Вы оплачиваете нашу работу при получении ковра, когда убедитесь, что результат вас устраивает и все выполнено на высшем уровне. Мы уверены в качестве своей работы, поэтому предоставляем такие условия всем нашим клиентам. 
+							</p>
+						</div>
+					</div>
+					
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Есть ли у вас скидки?</h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								У нас регулярно проходят акции. Наши постоянные клиенты получают 10% скидку на все услуги! Так же при объёмах от 40кв.м обсуждаем индивидуальные скидки. 
+							</p>
+						</div>
+					</div>
+					
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Нужно ли достать ковер из-под мебели?</h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								Да. Мы бесплатно доставляем и поднимаем на этаж ковры. Вам лишь необходимо достать ковер из-под мебели и свернуть его.
+						</div>
+					</div>
+					
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Принимаете к оплате карты?</h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								Да, мастер примет к оплате банковскую карту либо наличные. Оплата производится по факту выполнения работы. Вы платите только за результат.  
+							</p>
+						</div>
+					</div>
+					
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Будет ли мебель пахнуть химией после чистки?</h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								Мы используем эффективные гипоаллергенные чистящие средства, допущенные к применению в жилых помещениях, так что в вашем помещении останется лишь приятный запах чистоты и свежести. 
+							</p>
+						</div>
+					</div>
+					
+					<div class="ques__item">
+						<div class="ques__item-up">
+							<h class="ques__item-up-h">Сколько времени сохнет диван после химчистки? </h>
+							<div class="ques__item-up-btn">
+								<span></span>
+							</div>
+						</div>
+						<div class="ques__item-down">
+							<p class="ques__item-down-p">
+								После чистки мастер вытягивает всю основную воду из ткани, диван остается досыхать в течении 3-5 часов.
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="brends" id="brends">
+		<div class="brends__flex">
+			<div class="container">
+				<h1 class="brends__title">Наши постоянные клиенты</h1>
+			</div>
+			<div class="brends__wrap">
+				<div class="brends__animate">
+					<div class="brends__first">
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+					</div>
+					<div class="brends__second">
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+						<div class="brends__item"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="equipment" id="equipment">
+		<div class="equipment__wrap">
+			<h1 class="equipment__h title">Оборудование</h1>
+			<div class="equipment__slider-wrap">
+				<div class="equipment__slider-nav" id="resultt">
+					<input type="text" value="0" class="counter__value-2" style="display: none;">
+					<div  id="leftt" class="equipment__slider-nav-left counter__btn-2" data-direction="minus"></div>
+					<div  id="rightt" class="equipment__slider-nav-right counter__btn-2" data-direction="plus"></div>
+				</div>
+				<div class="equipment__slider" id="wrap-2">
+					
+
+					<div class="equipment__slider-item equipment__500">
+						<div class="equipment__slider-item-img"></div>
+						<div class="equipment__slider-item-dark"></div>
+						<h5 class="equipment__slider-item-h">пылевыбивальная машина</h5>
+					</div>
+
+
+					<div class="equipment__slider-item equipment__500">
+						<div class="equipment__slider-item-img"></div>
+						<div class="equipment__slider-item-dark"></div>
+						<h5 class="equipment__slider-item-h">станок для стирки ковров</h5>
+					</div>
+					
+					<div class="equipment__slider-item equipment__300">
+						<div class="equipment__slider-item-img"></div>
+						<div class="equipment__slider-item-dark"></div>
+						<h5 class="equipment__slider-item-h">центрифуга для отжима</h5>
+					</div>
+
+					<div class="equipment__slider-item equipment__300">
+						<div class="equipment__slider-item-img"></div>
+						<div class="equipment__slider-item-dark"></div>
+						<h5 class="equipment__slider-item-h">моющий пылесос</h5>
+					</div>
+					<div class="equipment__slider-item equipment__500">
+						<div class="equipment__slider-item-img"></div>
+						<div class="equipment__slider-item-dark"></div>
+						<h5 class="equipment__slider-item-h">гипоаллергенная химия</h5>
+					</div>
+
+					<div class="equipment__slider-item equipment__300">
+						<div class="equipment__slider-item-img"></div>
+						<div class="equipment__slider-item-dark"></div>
+						<h5 class="equipment__slider-item-h">роторная машина</h5>
+					</div>
+					<div class="equipment__slider-item equipment__500">
+						<div class="equipment__slider-item-img"></div>
+						<div class="equipment__slider-item-dark"></div>
+						<h5 class="equipment__slider-item-h">сушильная камера</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="staff" id="staff">
+		<div class="container">
+			<h1 class="staff__title title">Персонал</h1>
+			<div class="staff__wrap">
+
+				<div class="staff__item">
+					<div class="staff__item-bcg"></div>
+					<div class="staff__item-img"></div>
+					<div class="staff__item-text">
+						<div class="staff__item-text-up">
+							<h1 class="staff__item-text-name">Альбина</h1>
+							<h1 class="staff__item-text-year">25 лет</h1>
+						</div>
+						<div class="staff__item-text-down">
+							<p class="staff__item-text-p">бухгалтер</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="staff__item">
+					<div class="staff__item-bcg"></div>
+					<div class="staff__item-img"></div>
+					<div class="staff__item-text">
+						<div class="staff__item-text-up">
+							<h1 class="staff__item-text-name">Арсен</h1>
+							<h1 class="staff__item-text-year">35 лет</h1>
+						</div>
+						<div class="staff__item-text-down">
+							<p class="staff__item-text-p">администратор</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="staff__item">
+					<div class="staff__item-bcg"></div>
+					<div class="staff__item-img"></div>
+					<div class="staff__item-text">
+						<div class="staff__item-text-up">
+							<h1 class="staff__item-text-name">Альбина</h1>
+							<h1 class="staff__item-text-year">25 лет</h1>
+						</div>
+						<div class="staff__item-text-down">
+							<p class="staff__item-text-p">бухгалтер</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="staff__item">
+					<div class="staff__item-bcg"></div>
+					<div class="staff__item-img"></div>
+					<div class="staff__item-text">
+						<div class="staff__item-text-up">
+							<h1 class="staff__item-text-name">Арсен</h1>
+							<h1 class="staff__item-text-year">35 лет</h1>
+						</div>
+						<div class="staff__item-text-down">
+							<p class="staff__item-text-p">администратор</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="staff__item">
+					<div class="staff__item-bcg"></div>
+					<div class="staff__item-img"></div>
+					<div class="staff__item-text">
+						<div class="staff__item-text-up">
+							<h1 class="staff__item-text-name">Альбина</h1>
+							<h1 class="staff__item-text-year">25 лет</h1>
+						</div>
+						<div class="staff__item-text-down">
+							<p class="staff__item-text-p">бухгалтер</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="staff__item">
+					<div class="staff__item-bcg"></div>
+					<div class="staff__item-img"></div>
+					<div class="staff__item-text">
+						<div class="staff__item-text-up">
+							<h1 class="staff__item-text-name">Арсен</h1>
+							<h1 class="staff__item-text-year">35 лет</h1>
+						</div>
+						<div class="staff__item-text-down">
+							<p class="staff__item-text-p">администратор</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="map" id="map">
+		<div class="container">
+			<div class="map__wrap">
+				<div class="map__first">
+					<h1 class="map__title title">Наш Адрес</h1>
+					<div class="map__text">
+						<div class="map__text-item">
+							<div class="map__text-icon"></div>
+							<h6 class="map__text-h">Нальчик, Мовсисяна 3</h6>
+						</div>
+						<div class="map__text-item">
+							<div class="map__text-icon"></div>
+							<h6 class="map__text-h">пн-сб 9:00-19:00</h6>
+						</div>
+					</div>
+				</div>
+				<div class="map__second-wrap">
+					<div class="map__second">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd05e1755bf068b83e565f9725d0fc16034f52c2b6448cf2cb5848a55fbc9bb3&amp;source=constructor" width="718" height="460" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer" id="footer">
+		<div class="footer__up">
+			<div class="footer__up-first-wrap">
+				<div class="footer__up-first">
+					<a href="cover.html" class="footer__up-first-link">Цены и услуги</a>
+					<a href="portfolio.html" class="footer__up-first-link">Наши работы</a>
+					<a href="gallery-photo.html" class="footer__up-first-link">Галерея</a>
+					<a href="gallery-video.html" class="footer__up-first-link">Видео</a>
+					<a href="contacts.html" class="footer__up-first-link">Контакты</a>
+				</div>
+			</div>
+			<div class="footer__up-second-wrap">
+				<div class="footer__up-second">
+					<a href="tel:+79627720101" class="footer__up-second-link" target='_blank'>+7 962 772 01 01</a>
+					<a href="https://www.instagram.com/crystal_him_07/" target='_blank' class="footer__up-second-link"><span class="footer__up-second-inst footer__up-second-i" target='_blank'></span>instagram</a>
+					<a href="whatsapp://send?phone=79627720101" target='_blank' class="footer__up-second-link"><span class="footer__up-second-wa footer__up-second-i"></span>whats'app</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__down">
+			<div class="container">
+				<div class="footer__down-wrap">
+					<p class="footer__down-cop">© Химчистка «Кристалл». 2021</p>
+					<div class="footer__down-logo"></div>
+					<div class="footer__down-jo">
+						<p class="footer__down-jo-p">разработка и дизайн:</p>
+						<a href="https://majorttom.github.io/majorTtom.github.io-jollyollly/" target='_blank' class="footer__down-jo-l"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>		
+
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/all.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script>
+		$('.mask-phone').mask('+7 (999) 999-99-99');
+	</script>
+
+	<script type="text/javascript">
+		$('.feed__slider').slick({
+		  infinite: true,
+		  slidesToShow: 2,
+		  slidesToScroll: 2,
+		  responsive: [
+		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
+		});
+
+		$('.client__slider').slick({
+		  arrows: false,	
+		  infinite: true,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  cssEase: 'linear',
+		  autoplay: true,
+		  fade: true
+
+		});
+	</script>
+</body>
+</html>
