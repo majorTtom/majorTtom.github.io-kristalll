@@ -139,6 +139,10 @@
   .header__phone {
     display: none;
   }
+  .fixed,
+  .fixed__fixed{
+    display: none !important;
+  }
 }
 /*MOBILE*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 647px) {
@@ -246,7 +250,7 @@
   }
 
   .process {
-    height: 2200px;
+    height: 2460px;
     border-radius: 50px;
     width: 95%;
     margin: 0 auto;
