@@ -179,6 +179,7 @@
     border-radius: 30px;
   }
   .main__bcg {
+    display: none;
     height: 40%;
     width: 100%;
     border-radius: 30px;
