@@ -691,6 +691,8 @@
     height: 220px;
   }
   .gallery__img__active {
+    background-size: cover !important;
+    width: 90% !important;
     height: 280px !important;
     top: 30% !important;
   }
