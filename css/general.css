@@ -246,9 +246,9 @@ a:hover {
   align-items: center;
 }
 .header__logo {
-  background-image: url(../img/logo5.png);
-  width: 60px;
-  height: 52px;
+  background-image: url(../img/logg.svg);
+  width: 78px;
+  height: 54px;
   display: block;
   background-repeat: no-repeat;
 }
@@ -379,10 +379,10 @@ a:hover {
 }
 
 .footer__down-logo {
-  width: 75px;
-  height: 67px;
+  width: 78px;
+  height: 54px;
   display: block;
-  background-image: url(../img/fttr-lg.svg);
+  background-image: url(../img/logg.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
